@@ -116,7 +116,7 @@ header {
 }
 
 .number-controls button[disabled] {
-  color: #ffffff;
+  color: #e8bff8;
   cursor: default;
 }
 

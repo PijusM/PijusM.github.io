@@ -34,10 +34,10 @@ guessButton.addEventListener('click', () => {
 
   // Display the winner
   if (humanIsWinner) {
-    guessButton.innerText = 'You Win!!!!!';
+    guessButton.innerText = 'You Win!';
     guessButton.classList.toggle('winning-text')
   } else {
-    computerWinsDisplay.innerText = 'Computer Wins!!!';
+    computerWinsDisplay.innerText = 'Computer Wins!';
   }
 
   // winnerDisplay.innerText = humanIsWinner ? 'You win!' : 'Computer wins!';
@@ -84,10 +84,10 @@ subtractButton.addEventListener('click', () => {
 });
 
 const handleValueChange = value => {
-  if (value > 0 && value <= 99) {
+  if (value > 0 && value <= 98) {
     subtractButton.removeAttribute('disabled');
     addButton.removeAttribute('disabled');
-  } else if (value > 99) {
+  } else if (value > 98) {
     addButton.setAttribute('disabled', true);
   } else if (value <= 0) {
     subtractButton.setAttribute('disabled', true);
